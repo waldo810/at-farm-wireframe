@@ -1,0 +1,33 @@
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14pt;
+}
+
+a.selected{
+    text-decoration: underline;
+}
+
+nav{
+    border: 1px solid;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
