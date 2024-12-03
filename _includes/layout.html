@@ -1,3 +1,14 @@
+---
+navPages:
+  - title: Home
+    url: /index
+  - title: About Us
+    url: /about-us
+  - title: Departments
+    url: /departments
+  - title: Employment Opportunities
+    url: /employment-opportunities
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,37 +25,18 @@
         </div>
         <nav>
             <ul>
-
-                <li>
-                    <a href="/index.html" class="selected">
-                    Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/about-us">
-                    About Us
-                    </a>
-                </li>
+               
+                  
+                    {%- for entry in navPages %}
+                    <li {% if entry.title ==name %} class="selected" {% endif %} >
+                    <a href="{{ entry.url }}">{{ entry.title }}</a>
+                    </li>
+                    {%- endfor %}
+                    
                 
-                <li>
-                    <a href="/employment-opportunities">
-                    Employment Opportunities
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/departments">
-                    Departments
-                    </a>
-                </li>
-
             </ul>
         </nav>
     </header>
-    <main>
-
-       {{content}}
-    </main>
+    <main>{{content}}</main>
 </body>
 </html>
