@@ -8,7 +8,22 @@ navPages:
     url: /departments
   - title: Employment Opportunities
     url: /employment-opportunities
+  - title: Contact Us
+    url: /contact-us
+
+eleventyNavigation: 
+- title: Home
+  url: /index
+- title: About Us
+  url: /about-us
+- title: Departments
+  url: /departments
+- title: Employment Opportunities
+  url: /employment-opportunities
+- title: Sign Up for Emails
+  url: /contact-us
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,5 +53,12 @@ navPages:
         </nav>
     </header>
     <main>{{content}}</main>
+<div id= "footernav">
+    {%- for entry in eleventyNavigation %}
+    <li {% if entry.title ==name %} class="selected" {% endif %} >
+    <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </li>
+    {%- endfor %}
+ </div>
 </body>
 </html>
