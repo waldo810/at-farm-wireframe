@@ -2,11 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 h1 p{
     font-family: "Alice", serif;
     color: black;
 }
+
+h1{
+    margin: 10vh;
+}
+
 .location{
     display: flex;
     flex-direction: row;
@@ -37,7 +43,7 @@ li.selected a{
 }
 
 nav{
-    border: 1px solid;
+    border: 1px solid; 
 }
 
 main{
@@ -46,6 +52,13 @@ main{
     align-items: center;
     font-family: "Alice", serif;
     font-size: 20pt;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 body{
@@ -82,6 +95,7 @@ body{
     font-family: "Open Sans", sans-serif;
     font-size: 16pt;
     text-decoration: none;
+    padding: 0.5em;
 }
 
 .latest-events{
@@ -96,11 +110,20 @@ body{
     margin-top: 25vh;
     background-color: #EFEEEE;
     list-style-type: none;
+    padding: 1em;
+    font-family: "Poppins", sans-serif;
 }
 
 #footernav a {
     text-decoration: none;
 }
+
+#signup{
+    color:#FFFFFF;
+    background: #787070;
+    text-decoration: none;
+    padding: 0.5em;
+  }
 
 #specials{
   display: flex;
@@ -110,7 +133,8 @@ body{
   border: 1px transparent;
   background-color: #C7B299;
   width: 430px;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 5vh;
 }
 
 #import-info{
@@ -118,9 +142,217 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-wrap: wrap;
     border: 1px transparent;
     background-color: #C7B299;
     width: 430px;
+    padding: 5vh;
   }
 
+  #green{ 
+  background-image: url(https://image.shutterstock.com/image-photo/bean-planting-greenhouse-corridor-illuminated-260nw-2499129385.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 246px;
+  height: 218px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  }
+
+  #house{
+    color: #A80903;
+    font-size: 20pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(255 255 255 / 0.5);
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+
+  }
+
+
+
+  #ice-cream{ 
+    background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/ice%20cream-cone_R0QKXEQ7DG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 246px;
+    height: 218px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    }
+  
+    #creamery{
+      color: #A80903;
+      font-size: 20pt;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      background-color: rgb(255 255 255 / 0.5);
+      padding-left:  2.75em;
+      padding-right: 2.75em;
+    }
+
+    #bread{ 
+        background-image: url(https://image.shutterstock.com/image-photo/assorted-pastry-bread-arranged-on-260nw-2169704423.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 246px;
+        height: 218px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        }
+      
+        #bakery{
+          color: #A80903;
+          font-size: 20pt;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          background-color: rgb(255 255 255 / 0.5);
+          padding-left:  3em;
+          padding-right: 3em;
+        }   
+
+           #meats{ 
+        background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHgxNjI4NzQ0LWltYWdlLWt3eXBtNjF2LmpwZw.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 246px;
+        height: 218px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        }
+      
+        #deli{
+          color: #A80903;
+          font-size: 20pt;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          background-color: rgb(255 255 255 / 0.5);
+          padding-left:  4em;
+          padding-right: 4em;
+        }   
+        #fruitsveggies{ 
+            background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NzU5NzA0LWltYWdlLWt3dnhmeGEwLmpwZw.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 246px;
+            height: 218px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            }
+          
+            #produce{
+              color: #A80903;
+              font-size: 20pt;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-items: center;
+              background-color: rgb(255 255 255 / 0.5);
+              padding-left:  2.75em;
+              padding-right: 2.75em;
+            }   
+            #drinks{ 
+                background-image: url(https://media.istockphoto.com/id/166223496/photo/closeup-shot-of-wineshelf.webp?b=1&s=612x612&w=0&k=20&c=23zw0lOXGw9fEWfGs0CI-r3pMZEg-blOeC5cRA3BuQ4=);
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 246px;
+                height: 218px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;
+                }
+              
+                #beerwine{
+                  color: #A80903;
+                  font-size: 20pt;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-items: center;
+                  background-color: rgb(255 255 255 / 0.5);
+                  padding-left: 2em;
+                  padding-right: 1em;
+                }
+#depttop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family:"Orelega One", serif;
+}
+
+#deptbottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family:"Orelega One", serif;
+}
+
+#application{
+   background-color: #A80903;
+   color: white;
+   font-family: "Open Sans", sans-serif;
+   font-size: 16pt;
+   padding: 2em;
+   margin-top: 2em;
+}
+
+#apps{
+    margin-top: 5em;
+    padding: 1em;
+    border: 2pt solid;
+    border-color: #A80903;
+    color: #A80903;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    justify-content: space-between;
+    
+}
+
+#service{
+    padding: 1em;
+    border: 2pt solid;
+    border-color: #A80903;
+    color: #A80903;
+    display: flex;
+    flex-direction: row;
+}
+
+#clerk{
+    padding: 1em;
+    border: 2pt solid;
+    border-color: #A80903;
+    color: #A80903;
+    display: flex;
+    flex-direction: row;
+}
+
+#designer{
+    padding: 1em;
+    border: 2pt solid;
+    border-color: #A80903;
+    color: #A80903;
+    display: flex;
+    flex-direction: row;
+}
